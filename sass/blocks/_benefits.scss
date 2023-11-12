@@ -1,0 +1,57 @@
+.benefits {
+	padding-bottom: 110px;
+}
+
+.benefits__heading {
+	padding-bottom: 58px;
+	text-align: center;
+}
+
+.benefits__row {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 35px;
+}
+
+.benefits__item {
+	text-align: center;
+
+	&-img {
+		margin-bottom: 15px;
+		display: inline-block;
+
+		circle {
+			fill: rgba(88, 190, 191, 0.2);
+			transition: fill 0.2s ease-in;
+		}
+
+		path {
+			fill: #58BEBF;
+			transition: fill 0.2s ease-in;
+		}
+
+		ellipse {
+			fill: #58BEBF;
+			transition: fill 0.2s ease-in;
+		}
+	}
+
+	&:hover .benefits__item-img {
+		circle {
+			fill: $accent-color;
+		}
+
+		path {
+			fill: #fff;
+		}
+
+		ellipse {
+			fill: #fff;
+		}
+	}
+}
+
+.benefits__item-title {
+	margin-bottom: 2px;
+	font-size: 28px;
+}

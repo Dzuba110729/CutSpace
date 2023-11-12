@@ -1,0 +1,78 @@
+.serve {
+	padding-bottom: 120px;
+
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: #F5F6FA;
+
+		position: absolute;
+		top: -50%;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+.serve__heading {
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.serve__title {
+	margin-bottom: 10px;
+}
+
+.serve__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	column-gap: 30px;
+}
+
+.card-customer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 10px;
+   background-color: #FFF;
+   box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+	padding: 40px 110px;
+
+	text-align: center;
+
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+	.button {
+		background-color: #FFF;
+		color: $accent-color;
+	}
+
+	&__icon {
+		fill: $accent-color;
+		transition: fill 0.2s ease-in;
+		margin-bottom: 15px;
+	}
+
+	&:hover {
+		background-color: $accent-color;
+		color: #FFF;
+
+		.button {
+			background-color: #FFF;
+		}
+
+		.card-customer__icon {
+			fill: #FFF;
+		}	
+	}
+}
+
+.card-customer__text {
+	margin-bottom: 25px;
+}
